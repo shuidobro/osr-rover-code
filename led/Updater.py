@@ -11,28 +11,51 @@ import Feature
 #Set GPIO Pin Values
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
+
+#NEW
 red1_pin = 17
 green1_pin = 18
-#green1_pin = 27
-#blue1_pin = 22
-blue1_pin = 13
+blue1_pin = 22
+
 red2_pin = 23
 green2_pin = 24
 blue2_pin = 25
-#clock_pin = 3
-clock_pin = 19
-#a_pin = 7
-a_pin = 20
-#b_pin = 8
-b_pin = 21
-#c_pin = 9
-c_pin = 16
+
+a_pin = 7
+b_pin = 8
+c_pin = 9
+
+clock_pin = 3
 latch_pin = 4
-#oe_pin = 2
-oe_pin = 26
+oe_pin = 2
+
 dir1 = 10
 dir2 = 11
 delay = 0.000001
+
+#old
+#red1_pin = 17
+#green1_pin = 18
+##green1_pin = 27
+##blue1_pin = 22
+#blue1_pin = 13
+#red2_pin = 23
+#green2_pin = 24
+#blue2_pin = 25
+##clock_pin = 3
+#clock_pin = 19
+##a_pin = 7
+#a_pin = 20
+##b_pin = 8
+#b_pin = 21
+##c_pin = 9
+#c_pin = 16
+#latch_pin = 4
+##oe_pin = 2
+#oe_pin = 26
+#dir1 = 10
+#dir2 = 11
+#delay = 0.000001
 
 class updater():
 	def __init__(self,Display):

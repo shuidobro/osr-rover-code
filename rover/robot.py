@@ -102,10 +102,10 @@ class Robot(Motor):
 		
 		if r == 250: return [0]*4
 
-		ang1 = int(math.degrees(math.atan(self.d1/(abs(r)+self.d3))))
-		ang2 = int(math.degrees(math.atan(self.d2/(abs(r)+self.d3))))
-		ang3 = int(math.degrees(math.atan(self.d2/(abs(r)-self.d3))))
-		ang4 = int(math.degrees(math.atan(self.d1/(abs(r)-self.d3))))
+		ang1 = int(math.degrees(math.atan(self.d1/(abs(r)-self.d3))))
+		ang2 = int(math.degrees(math.atan(self.d2/(abs(r)-self.d3))))
+		ang3 = int(math.degrees(math.atan(self.d2/(abs(r)+self.d3))))
+		ang4 = int(math.degrees(math.atan(self.d1/(abs(r)+self.d3))))
 
 		if radius > 0: return [ang2,-ang1,-ang4,ang3]
 		else: return [-ang4,ang3,ang2,-ang1]	
